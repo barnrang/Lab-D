@@ -6,6 +6,7 @@
 \usepackage{float}
 \usepackage{graphicx}
 \usepackage[colorinlistoftodos]{todonotes}
+\usepackage[nottoc]{tocbibind}
 
 \usepackage{listings}
 
@@ -32,13 +33,13 @@
 }
 
 
-\title{Theme D Experiment for fluid dynamics / Incubation of coastal ecosystem}
+\title{Theme D Experiment for fluid dynamics \& Incubation of coastal ecosystem}
 
 \author{Thumwanit Napat Group 2 \\ 16B00133}
 
 \date{\today}
-
 \begin{document}
+\nocite{*}
 \maketitle
 
 \chapter{Experiment for fluid dynamics}
@@ -46,6 +47,10 @@
 
 \section{Background \& Theories}
 The setting and knowledge are based on the handout of the experiment, Theme D.
+
+The experiment was splitted into 3 sections. The first part is preparatory experiment for measure the
+based value for the next section. The second section is for simultaing the situation where there is a blockage which disturb the
+flow. The last section simulate the situation where the ground is filled by coral which slow down the flow.
 \begin{enumerate}
     \item {\bf Flow rate} - Derived from Bernoulli's equation
     \begin{equation}\label{eq:flow_rate}
@@ -203,6 +208,10 @@ We can observe that the friction coefficient for the case with porous bed became
 
 \chapter{Incubation of coastal ecosystem}
 \label{sec:secondExperiment}
+
+In this experiment, we will measure the photosynthesis and calcification rate of the coral regarding to
+the intensity of the light in order to estimate the real world situation of coral reef accumulation. The experiment
+was conducted on different intensities, 100\%, 50\%, 25\% and 0\%.
 
 \section{Result \& Discussion}
 
@@ -396,7 +405,7 @@ def Eb_a(t):
 \end{lstlisting}
 \end{appendices}
 
-\bibliographystyle{plain}
-\bibliography{sample.bib}
+\bibliographystyle{unsrt}
+\bibliography{sample}
 
 \end{document}
